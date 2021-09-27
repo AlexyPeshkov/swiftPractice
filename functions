@@ -98,3 +98,23 @@ outputEvenNumbersOutOfRange(number1: 40, number2: 27)
 ---------------------------------------------------------------
 
 6. Создайте функцию, которая принимает в качестве параметра целое число и возвращает количество цифр в этом числе.
+----
+func numberOfCharactersInNumber(_ a: Int) -> Int{
+    let count: String
+    if a < 0 {
+        let number = -a
+        count = String(number)
+    } else {
+        count = String(a)
+    }
+    return count.count
+}
+
+numberOfCharactersInNumber(1)
+numberOfCharactersInNumber(10)
+numberOfCharactersInNumber(109)
+numberOfCharactersInNumber(-4)
+numberOfCharactersInNumber(-67)
+------------------------------------------------------------
+
+7. Создайте функцию, которая принимает в качестве параметра целое число и возвращает сумму его цифр.
