@@ -1,0 +1,21 @@
+//Task 1
+//Составьте программу, которая создаёт список из 10 элементов и заполняет его случайными положительными однозначными числами.
+//Программа должна подсчитать и вывести на экран произведение всех значений элементов списка
+
+
+func digitsOfRandomArray(withLangth arrayLength: Int) -> Int {
+    var array: [Int] = []
+    var digits = 1
+    
+    for _ in 1...arrayLength {
+        array.append(Int.random(in: 1...9))
+    }
+    
+    for i in array {
+       digits *= i
+    }
+    
+    return digits
+}
+
+digitsOfRandomArray(withLangth: 12)
